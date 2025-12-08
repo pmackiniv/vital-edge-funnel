@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="UTF‑8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vital Edge Insurance — Marketplace Coverage</title>
+<title>Vital Edge Insurance — Marketplace Coverage</title>
 
-<!-- Social-share previews (Open Graph & Twitter) -->
-<meta property="og:title" content="Need Marketplace Coverage for 2026?">
+<!-- Social‑share previews (Open Graph & Twitter) -->
+<meta property="og:title" content="Need Marketplace Coverage for 2026?">
 <meta property="og:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans, compare rates and verify eligibility instantly.">
 <meta property="og:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
 <meta property="og:url" content="https://pmackiniv.github.io/vital-edge-funnel/">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Need Marketplace Coverage for 2026?">
+<meta name="twitter:title" content="Need Marketplace Coverage for 2026?">
 <meta name="twitter:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans and check eligibility.">
 <meta name="twitter:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
 
@@ -24,6 +24,7 @@
         padding: 0;
         color: #1a1a1a;
     }
+    /* container for professional card */
     .card {
         max-width: 650px;
         margin: 40px auto 24px;
@@ -47,12 +48,13 @@
         margin: 10px auto 20px;
         display: block;
     }
-    .name-credentials {
+    .name‑credentials {
         font-size: 24px;
         font-weight: 700;
         margin: 8px 0 12px;
     }
-    .contact-button {
+    /* shared button styles */
+    .contact‑button {
         display: block;
         width: 100%;
         padding: 14px;
@@ -64,12 +66,13 @@
         text-decoration: none;
         cursor: pointer;
     }
-    .chat-btn { background-color: #3b5998; }
-    .sms-btn { background-color: #0d6efd; }
-    .whatsapp-btn { background-color: #25d366; }
-    .messenger-btn { background-color: #0084ff; }
-    .call-btn { background-color: #32a852; }
-    .cta-section {
+    .chat‑btn { background-color: #3b5998; }
+    .sms‑btn { background-color: #0d6efd; }
+    .whatsapp‑btn { background-color: #25d366; }
+    .messenger‑btn { background-color: #0084ff; }
+    .call‑btn { background-color: #32a852; }
+    /* CTA section */
+    .cta‑section {
         max-width: 650px;
         margin: 0 auto 24px;
         background: #fff;
@@ -78,17 +81,17 @@
         border: 1px solid #e2e2e2;
         box-shadow: 0px 4px 14px rgba(0,0,0,0.03);
     }
-    .cta-section h2 {
+    .cta‑section h2 {
         font-size: 26px;
         margin: 0 0 12px;
         font-weight: 700;
     }
-    .cta-section p {
+    .cta‑section p {
         font-size: 18px;
         line-height: 1.5;
         margin-bottom: 20px;
     }
-    .eligibility-btn {
+    .eligibility‑btn {
         display: block;
         width: 100%;
         padding: 15px;
@@ -102,7 +105,8 @@
         cursor: pointer;
         margin-bottom: 12px;
     }
-    .disclaimer, .footer-consent {
+    /* disclaimer & consent section */
+    .disclaimer, .footer‑consent {
         max-width: 650px;
         margin: 0 auto;
         padding: 12px 28px;
@@ -110,60 +114,80 @@
         line-height: 1.5;
         color: #555;
     }
-    .checkbox-container {
+    .checkbox‑container {
         max-width: 650px;
         margin: 0 auto 12px;
         padding: 0 28px;
         font-size: 14px;
     }
-    .checkbox-container input[type="checkbox"] {
+    .checkbox‑container input[type="checkbox"] {
         margin-right: 8px;
     }
 </style>
 
 <script>
+// disable/enable buttons based on consent
 function checkConsent(event) {
-    var cb = document.getElementById('consent-checkbox');
+    var cb = document.getElementById('consent‑checkbox');
     if (!cb.checked) {
         event.preventDefault();
         alert('Please confirm your consent before continuing.');
         return false;
     }
+    // otherwise allow navigation
     return true;
 }
 </script>
 </head>
 <body>
+
+<!-- Professional View Card -->
 <div class="card">
+    <!-- Headshot -->
     <img src="./Patrick Mackin professional headshot .PNG" alt="Patrick Mackin IV Headshot" class="headshot">
+
+    <!-- Logo -->
     <img src="./logo.png" alt="Vital Edge Insurance Logo" class="logo">
-    <div class="name-credentials">Patrick Mackin IV — Licensed Enrollment Specialist</div>
-    <a href="https://m.me/13522148879" class="contact-button chat-btn" onclick="checkConsent(event)">Chat with me</a>
-    <a href="sms:+13522148879?&body=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact-button sms-btn" onclick="checkConsent(event)">Text / SMS</a>
-    <a href="https://wa.me/13522148879?text=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact-button whatsapp-btn" onclick="checkConsent(event)">WhatsApp</a>
-    <a href="https://m.me/13522148879" class="contact-button messenger-btn" onclick="checkConsent(event)">Facebook Messenger</a>
-    <a href="tel:+13522148879" class="contact-button call-btn" onclick="checkConsent(event)">Call Me</a>
+
+    <!-- Name + credentials -->
+    <div class="name‑credentials">Patrick Mackin IV — Licensed Enrollment Specialist</div>
+
+    <!-- Contact buttons (use your existing button colors) -->
+    <a href="https://m.me/13522148879" class="contact‑button chat‑btn" onclick="checkConsent(event)">Chat with me</a>
+    <a href="sms:+13522148879?&body=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact‑button sms‑btn" onclick="checkConsent(event)">Text / SMS</a>
+    <a href="https://wa.me/13522148879?text=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact‑button whatsapp‑btn" onclick="checkConsent(event)">WhatsApp</a>
+    <a href="https://m.me/13522148879" class="contact‑button messenger‑btn" onclick="checkConsent(event)">Facebook Messenger</a>
+    <a href="tel:+13522148879" class="contact‑button call‑btn" onclick="checkConsent(event)">Call Me</a>
 </div>
-<div class="cta-section">
+
+<!-- CTA section (intro + CTA + eligibility button) -->
+<div class="cta‑section">
     <h2>Need Marketplace Coverage?</h2>
     <p>
-        Chat or text with me live to explore Marketplace health-insurance options for 2026 and check eligibility instantly.
+        Chat or text with me live to explore Marketplace health‑insurance options for 2026 and check eligibility instantly.
     </p>
-    <a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" class="eligibility-btn" onclick="checkConsent(event)">
+    <a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" class="eligibility‑btn" onclick="checkConsent(event)">
         Check Eligibility Instantly
     </a>
 </div>
+
+<!-- CMS‑required marketplace disclaimer -->
 <div class="disclaimer">
-    <strong>Marketplace Disclaimer:</strong> We do not offer every plan available in your area. Any information we provide is limited to the plans we do offer in your area. Please visit HealthCare.gov for more information.
+    <strong>Marketplace Disclaimer:</strong> We do not offer every plan available in your area. Any information we provide is limited to the plans we do offer in your area. Please visit HealthCare.gov for more information:contentReference[oaicite:0]{index=0}.
 </div>
-<div class="checkbox-container">
+
+<!-- Consent checkbox -->
+<div class="checkbox‑container">
     <label>
-        <input type="checkbox" id="consent-checkbox">
-        I confirm that I authorize Vital Edge Insurance to contact me regarding Marketplace insurance options. I understand consent is voluntary and may be revoked at any time.
+        <input type="checkbox" id="consent‑checkbox">
+        I confirm that I authorize Vital Edge Insurance to contact me regarding Marketplace insurance options. I understand consent is voluntary and may be revoked at any time:contentReference[oaicite:1]{index=1}.
     </label>
 </div>
-<div class="footer-consent">
-    By providing your information, you authorize Vital Edge Insurance and its agents to contact you regarding Marketplace insurance options. Consent is voluntary and may be revoked at any time.
+
+<!-- Footer consent language -->
+<div class="footer‑consent">
+    By providing your information, you authorize Vital Edge Insurance and its agents to contact you regarding Marketplace insurance options. Consent is voluntary and may be revoked at any time:contentReference[oaicite:2]{index=2}.
 </div>
+
 </body>
 </html>
