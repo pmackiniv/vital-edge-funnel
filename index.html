@@ -1,140 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Vital Edge Insurance — Marketplace Coverage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vital Edge Insurance — Marketplace Coverage</title>
 
-    <!-- ===== OPEN GRAPH FOR LINK PREVIEWS (MESSAGING APPS, SOCIAL, SMS) ===== -->
-    <meta property="og:title" content="Need Marketplace Coverage for 2026?">
-    <meta property="og:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans, compare rates, and verify eligibility instantly.">
-    <meta property="og:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
-    <meta property="og:url" content="https://pmackiniv.github.io/vital-edge-funnel/">
-    <meta property="og:type" content="website">
+<!-- Social-share previews (Open Graph & Twitter) -->
+<meta property="og:title" content="Need Marketplace Coverage for 2026?">
+<meta property="og:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans, compare rates and verify eligibility instantly.">
+<meta property="og:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
+<meta property="og:url" content="https://pmackiniv.github.io/vital-edge-funnel/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Need Marketplace Coverage for 2026?">
+<meta name="twitter:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans and check eligibility.">
+<meta name="twitter:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
 
-    <!-- ===== TWITTER CARD ===== -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Need Marketplace Coverage for 2026?">
-    <meta name="twitter:description" content="Chat or text with a licensed Enrollment Specialist to explore Marketplace plans and check eligibility.">
-    <meta name="twitter:image" content="https://pmackiniv.github.io/vital-edge-funnel/logo.png">
+<style>
+    body {
+        font-family: "Times New Roman", serif;
+        background-color: #f6f6f6;
+        margin: 0;
+        padding: 0;
+        color: #1a1a1a;
+    }
+    .card {
+        max-width: 650px;
+        margin: 40px auto 24px;
+        background: #fff;
+        padding: 24px 28px;
+        border-radius: 14px;
+        border: 1px solid #e2e2e2;
+        box-shadow: 0px 4px 14px rgba(0,0,0,0.04);
+        text-align: center;
+    }
+    .headshot {
+        width: 145px;
+        height: 145px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin: 0 auto 12px;
+        border: 3px solid #e6e6e6;
+    }
+    .logo {
+        width: 160px;
+        margin: 10px auto 20px;
+        display: block;
+    }
+    .name-credentials {
+        font-size: 24px;
+        font-weight: 700;
+        margin: 8px 0 12px;
+    }
+    .contact-button {
+        display: block;
+        width: 100%;
+        padding: 14px;
+        margin-bottom: 12px;
+        border-radius: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .chat-btn { background-color: #3b5998; }
+    .sms-btn { background-color: #0d6efd; }
+    .whatsapp-btn { background-color: #25d366; }
+    .messenger-btn { background-color: #0084ff; }
+    .call-btn { background-color: #32a852; }
+    .cta-section {
+        max-width: 650px;
+        margin: 0 auto 24px;
+        background: #fff;
+        padding: 20px 28px;
+        border-radius: 14px;
+        border: 1px solid #e2e2e2;
+        box-shadow: 0px 4px 14px rgba(0,0,0,0.03);
+    }
+    .cta-section h2 {
+        font-size: 26px;
+        margin: 0 0 12px;
+        font-weight: 700;
+    }
+    .cta-section p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .eligibility-btn {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 8px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #ff6600;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 12px;
+    }
+    .disclaimer, .footer-consent {
+        max-width: 650px;
+        margin: 0 auto;
+        padding: 12px 28px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+    }
+    .checkbox-container {
+        max-width: 650px;
+        margin: 0 auto 12px;
+        padding: 0 28px;
+        font-size: 14px;
+    }
+    .checkbox-container input[type="checkbox"] {
+        margin-right: 8px;
+    }
+</style>
 
-    <!-- ===== FONTS & STYLE ===== -->
-    <style>
-        body {
-            font-family: "Times New Roman", serif;
-            background-color: #f6f6f6;
-            margin: 0;
-            padding: 0;
-            color: #1a1a1a;
-        }
-
-        .card {
-            max-width: 650px;
-            margin: 40px auto;
-            background: white;
-            padding: 24px 28px;
-            border-radius: 14px;
-            border: 1px solid #e2e2e2;
-            box-shadow: 0px 4px 14px rgba(0,0,0,0.04);
-            text-align: center;
-        }
-
-        .headshot {
-            width: 145px;
-            height: 145px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 0 auto 12px;
-            border: 3px solid #e6e6e6;
-        }
-
-        .logo {
-            width: 160px;
-            margin: 10px auto 20px;
-            display: block;
-        }
-
-        h1 {
-            font-size: 28px;
-            margin: 16px 0 10px;
-            font-weight: 700;
-        }
-
-        p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 24px;
-        }
-
-        .button {
-            display: block;
-            width: 100%;
-            padding: 15px;
-            font-size: 18px;
-            border-radius: 8px;
-            font-weight: bold;
-            color: #ffffff;
-            text-decoration: none;
-            margin-bottom: 14px;
-        }
-
-        .sms-button { background-color: #0d6efd; }
-        .whatsapp-button { background-color: #25d366; }
-        .eligibility-button { background-color: #ff6600; }
-
-        .consent {
-            margin-top: 22px;
-            font-size: 12px;
-            color: #666;
-            line-height: 1.45;
-        }
-    </style>
+<script>
+function checkConsent(event) {
+    var cb = document.getElementById('consent-checkbox');
+    if (!cb.checked) {
+        event.preventDefault();
+        alert('Please confirm your consent before continuing.');
+        return false;
+    }
+    return true;
+}
+</script>
 </head>
-
 <body>
-    <div class="card">
-
-        <!-- HEADSHOT -->
-        <img 
-            src="./Patrick%20Mackin%20professional%20headshot%20.PNG" 
-            alt="Patrick Mackin IV Headshot" 
-            class="headshot">
-
-        <!-- LOGO -->
-        <img 
-            src="./logo.png" 
-            alt="Vital Edge Insurance Logo" 
-            class="logo">
-
-        <h1>Need Marketplace Coverage?</h1>
-
-        <p>
-            Chat or text with me live to explore Marketplace health-insurance 
-            options for 2026 and check eligibility instantly.
-        </p>
-
- <!-- ACTION BUTTONS --><!-- ACTION BUTTONS -->    <!-- ACTION BUTTONS -->
-        <a href="sms:+13522148879?&body=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." 
-           class="button sms-button">
-           Text an Enrollment Specialist
-        </a>
-
-        <a href="https://wa.me/13522148879?text=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." 
-           class="button whatsapp-button">
-           Start on WhatsApp
-        </a>
-
-        <a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" 
-           class="button eligibility-button">
-           Check Eligibility Instantly
-        </a>
-        <!-- CONSENT NOTICE -->
-        <div class="consent">
-            By providing your information, you authorize Vital Edge Insurance 
-            and its agents to contact you regarding Marketplace insurance 
-            options. Consent is voluntary and may be revoked at any time.
-        </div>
-    </div>
+<div class="card">
+    <img src="./Patrick Mackin professional headshot .PNG" alt="Patrick Mackin IV Headshot" class="headshot">
+    <img src="./logo.png" alt="Vital Edge Insurance Logo" class="logo">
+    <div class="name-credentials">Patrick Mackin IV — Licensed Enrollment Specialist</div>
+    <a href="https://m.me/13522148879" class="contact-button chat-btn" onclick="checkConsent(event)">Chat with me</a>
+    <a href="sms:+13522148879?&body=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact-button sms-btn" onclick="checkConsent(event)">Text / SMS</a>
+    <a href="https://wa.me/13522148879?text=Hi%2C%20I%27d%20like%20to%20check%20my%20Marketplace%20eligibility." class="contact-button whatsapp-btn" onclick="checkConsent(event)">WhatsApp</a>
+    <a href="https://m.me/13522148879" class="contact-button messenger-btn" onclick="checkConsent(event)">Facebook Messenger</a>
+    <a href="tel:+13522148879" class="contact-button call-btn" onclick="checkConsent(event)">Call Me</a>
+</div>
+<div class="cta-section">
+    <h2>Need Marketplace Coverage?</h2>
+    <p>
+        Chat or text with me live to explore Marketplace health-insurance options for 2026 and check eligibility instantly.
+    </p>
+    <a href="https://www.healthsherpa.com/?agent_id=patrick-mackin-iv&_agent_id=patrick-mackin-iv" class="eligibility-btn" onclick="checkConsent(event)">
+        Check Eligibility Instantly
+    </a>
+</div>
+<div class="disclaimer">
+    <strong>Marketplace Disclaimer:</strong> We do not offer every plan available in your area. Any information we provide is limited to the plans we do offer in your area. Please visit HealthCare.gov for more information.
+</div>
+<div class="checkbox-container">
+    <label>
+        <input type="checkbox" id="consent-checkbox">
+        I confirm that I authorize Vital Edge Insurance to contact me regarding Marketplace insurance options. I understand consent is voluntary and may be revoked at any time.
+    </label>
+</div>
+<div class="footer-consent">
+    By providing your information, you authorize Vital Edge Insurance and its agents to contact you regarding Marketplace insurance options. Consent is voluntary and may be revoked at any time.
+</div>
 </body>
 </html>
-
